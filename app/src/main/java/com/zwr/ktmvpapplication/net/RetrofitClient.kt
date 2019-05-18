@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 class RetrofitClient private constructor() {
 
     companion object {
-        private var server1 = "http://sxapp.shengxunsoft.com/IsxApp.asmx/"
+        private var server1 = "baseUrl"
 
         private val instance = RetrofitClientHolder.getInstance(server1)
         fun getApi(): APIService {
